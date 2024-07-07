@@ -19,7 +19,7 @@
 <h3><span id="服务器各项功能介绍">服务器各项功能介绍</span></h3><ol>
 <li>用户管理系统</li>
 <li>设置家系统</li>
-<li>死亡返回系统</li>
+<li>死亡返回&#x2F;传送返回系统</li>
 <li>传送申请系统</li>
 <li>经济系统</li>
 <li>聊天系统</li>
@@ -40,7 +40,7 @@
 <h4><span id="设置家系统">设置家系统</span></h4><p><code>/sethome 名称</code><br>设置家。</p>
 <p><code>/delhome 名称</code><br>删除家。</p>
 <p><code>/homes</code><br>查看家的列表</p>
-<h4><span id="死亡返回系统">死亡返回系统</span></h4><p>在您传送或死亡后，您可以使用<code>/back</code>会到您传送前的位置（最近的保存点）&#x2F;死亡点。</p>
+<h4><span id="死亡返回x2f传送返回系统">死亡返回&#x2F;传送返回系统</span></h4><p>在您死亡后，您需要使用<code>/dback</code>回到您的死亡点。<br>如果您在传送后，希望回到传送前的地点，您需要使用<code>/back</code>。</p>
 <h4><span id="传送申请系统">传送申请系统</span></h4><p><code>/tpa 玩家名</code><br>申请传送到玩家。</p>
 <p><code>/tpahere 玩家名</code><br>申请玩家传送过来。</p>
 <p><code>/tpaccept 玩家名</code><br>接受某玩家的传送申请。<br><em>更多高级内容请查看CMI插件文档</em></p>
@@ -61,7 +61,7 @@
 <h4><span id="箱子锁系统不仅是箱子">箱子锁系统（不仅是箱子）</span></h4><p>主手持任意材质的告示牌右键任意可被交互的方块即可上锁。<br>右键告示牌，输入<code>/bl 行数 玩家</code>向方块添加可交互玩家。</p>
 <h4><span id="箱子商店系统重点">箱子商店系统（<strong>重点</strong>）</span></h4><p><strong>这个非常重要，您一定要仔细的、认真的看。</strong><br>由于我们使用Folia架构，所以导致主流箱子商店插件不支持。<br>而另一款好用的箱子商店插件汉化仅有繁体中文。<br>所以我们使用了这一款较为不方便的插件，感谢您的理解。</p>
 <p>如果您需要创建箱子商店，您首先需要一个告示牌和什么都没放的箱子。<br>您需要在箱子上放置告示牌，然后编辑以下内容：  </p>
-<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">**此行什么也不要填写，直接回车填写下一行**</span><br><span class="line">&lt;填写您希望玩家一次性购买多少个同类物品（填写阿拉伯数字）&gt;</span><br><span class="line">B &lt;玩家购买需要多少钱&gt; : &lt;玩家出售可以获得多少钱&gt; S</span><br><span class="line">?</span><br></pre></td></tr></table></figure>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">**此行什么也不要填写，直接回车填写下一行**</span><br><span class="line">&lt;填写您希望玩家一次性购买多少个同类物品（填写阿拉伯数字）&gt;</span><br><span class="line">B &lt;玩家购买需要多少钱&gt; : S &lt;玩家出售可以获得多少钱&gt;</span><br><span class="line">?</span><br></pre></td></tr></table></figure>
 
 <p><strong>特别重要的注解：其中被‘*’括起来的部分直接留空</strong><br><strong>其中‘&lt;&gt;’部分替换成您希望的数值（全部替换，包括‘&lt;&gt;’）</strong><br><strong>其中‘?’‘:’和‘B’‘S’不是修饰品！都必须要填写</strong><br><strong>其中所有符号必须是半角（即输入法打开输入英文的模式）</strong><br><em><strong>一定要严格按照注解操作，我不会解答不按照注解操作的脑溢血问题！！！</strong></em>  </p>
 <p>随后，您需要主手持您希望出售的物品左键告示牌，即可完成创建。<br>您以后只需要定时往箱子里面补货即可！<br><strong>（其实你不用补货，玩家同时可以在这个商店出售物资，这可以实现自动补货）</strong></p>
