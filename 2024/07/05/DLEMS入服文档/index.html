@@ -1,12 +1,11 @@
 <!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><title>DLEMS入服文档</title><link rel="stylesheet" href="/css/normalize.css"><link rel="stylesheet" href="/css/heti.min.css"><link rel="stylesheet" href="/css/hexo-theme-adoubi.css"><link rel="icon" href="/images/favicon.ico"><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="DLEMS-BLOG" type="application/atom+xml">
-</head><body><div class="header"><a class="github-link" target="_blank" rel="noopener" href="https://github.com/mc-dlems"><img class="github-image" src="/images/Aquicon-Github-small.png"></a><a class="email-link" href="mailto:support@dlems.us.kg"><img class="email-image" src="/images/email-small.png"></a><a class="subscribe-link" href="/atom.xml"><img class="subscribe-image" src="/images/subscribe-small.png"></a></div><div class="content"><div class="post-item"></div><h2 class="post-title-wrapper"><p class="post-title">DLEMS入服文档</p></h2><div class="post-date"><time datetime="2024-07-05T11:06:11.000Z">2024-07-05</time></div><div class="post-content"><h2><span id="在您开始阅读之前">在您开始阅读之前</span></h2><p>在您开始阅读之前，请您仔细阅读完这个部分。</p>
-<ol>
+</head><body><div class="header"><a class="github-link" target="_blank" rel="noopener" href="https://github.com/mc-dlems"><img class="github-image" src="/images/Aquicon-Github-small.png"></a><a class="email-link" href="mailto:support@dlems.us.kg"><img class="email-image" src="/images/email-small.png"></a><a class="subscribe-link" href="/atom.xml"><img class="subscribe-image" src="/images/subscribe-small.png"></a></div><div class="content"><div class="post-item"></div><h2 class="post-title-wrapper"><p class="post-title">DLEMS入服文档</p></h2><div class="post-date"><time datetime="2024-07-05T11:06:11.000Z">2024-07-05</time></div><div class="post-content"><h2><span id="在您开始阅读正文之前">在您开始阅读正文之前</span></h2><ol>
 <li>本服务器为养老生存服，PVP玩家可以远离了。</li>
 <li>服务器允许生电，并且开放部分原版特性，但是类似于栈溢出的原版特性不予开放。</li>
 <li>如果您追求明确的目标，请不要来本服务器，服务器满足不了你。</li>
 <li>如果您觉得开个服务器和单人生存没啥区别，请您<strong>滚回</strong>您的单人生存，别来玩服务器。</li>
 <li>如果您对在服务器内开挂感兴趣，请不要来此服务器，我们会将你封禁。</li>
-<li>如果您对无政府感兴趣，也不要来此服务器，我们还会将您封禁。</li>
+<li>如果您对无政府感兴趣，也不要来此服务器，我们会将您封禁。</li>
 </ol>
 <p>最后，在本文档上提到的问题，不要来问我（腐竹），我很有可能骂你一顿。<br>如果是本文档内写的不明白，请你指出不明白的点，我会态度很好的改正，并且感谢您。</p>
 <h2><span id="目录">目录</span></h2><ol>
@@ -30,7 +29,7 @@
 <li>紫砂防卡系统</li>
 <li>基岩版玩家系统</li>
 <li>箱子锁系统（不仅是箱子）</li>
-<li>箱子商店系统（这个是重点）</li>
+<li>箱子商店系统</li>
 <li>领地系统</li>
 </ol>
 <h4><span id="用户管理系统">用户管理系统</span></h4><p>在您进入服务器后，我们要求您输入一次性验证码（<strong>这是为了服务器的安全</strong>）。<br>您只需要根据提示输入即可。</p>
@@ -59,12 +58,7 @@
 <p><code>/msggui</code><br>打开发私信界面。</p>
 <p><code>/tpgui</code><br>打开传送申请界面</p>
 <h4><span id="箱子锁系统不仅是箱子">箱子锁系统（不仅是箱子）</span></h4><p>主手持任意材质的告示牌右键任意可被交互的方块即可上锁。<br>右键告示牌，输入<code>/bl 行数 玩家</code>向方块添加可交互玩家。</p>
-<h4><span id="箱子商店系统重点">箱子商店系统（<strong>重点</strong>）</span></h4><p><strong>这个非常重要，您一定要仔细的、认真的看。</strong><br>由于我们使用Folia架构，所以导致主流箱子商店插件不支持。<br>而另一款好用的箱子商店插件汉化仅有繁体中文。<br>所以我们使用了这一款较为不方便的插件，感谢您的理解。</p>
-<p>如果您需要创建箱子商店，您首先需要一个告示牌和什么都没放的箱子。<br>您需要在箱子上放置告示牌，然后编辑以下内容：  </p>
-<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">**此行什么也不要填写，直接回车填写下一行**</span><br><span class="line">&lt;填写您希望玩家一次性购买多少个同类物品（填写阿拉伯数字）&gt;</span><br><span class="line">B &lt;玩家购买需要多少钱&gt; : S &lt;玩家出售可以获得多少钱&gt;</span><br><span class="line">?</span><br></pre></td></tr></table></figure>
-
-<p><strong>特别重要的注解：其中被‘*’括起来的部分直接留空</strong><br><strong>其中‘&lt;&gt;’部分替换成您希望的数值（全部替换，包括‘&lt;&gt;’）</strong><br><strong>其中‘?’‘:’和‘B’‘S’不是修饰品！都必须要填写</strong><br><strong>其中所有符号必须是半角（即输入法打开输入英文的模式）</strong><br><em><strong>一定要严格按照注解操作，我不会解答不按照注解操作的脑溢血问题！！！</strong></em>  </p>
-<p>随后，您需要主手持您希望出售的物品左键告示牌，即可完成创建。<br>您以后只需要定时往箱子里面补货即可！<br><strong>（其实你不用补货，玩家同时可以在这个商店出售物资，这可以实现自动补货）</strong></p>
+<h4><span id="箱子商店系统">箱子商店系统</span></h4><p>拿着您希望出售&#x2F;收购的物品左键箱子，按照提示操作。<br>如果您希望更改商店的配置，请您右键属于您的商店的告示牌。<br>如果您希望购买&#x2F;出售物品，左键对应商店的告示牌即可。</p>
 <h4><span id="领地系统">领地系统</span></h4><p>在游戏内使用<code>/res ?</code>获取帮助。<br>里面的指令详情写的很详细，如果看不懂就去B站上面搜索！</p>
 <p>对了，最后再提一嘴：如果您在本篇教程中发现错字，欢迎指正！我们会在服务器给您一笔报酬。<br>感谢您的支持，我们再会！</p>
 <p>撰写于2024年7月5日 晚7:48</p>
